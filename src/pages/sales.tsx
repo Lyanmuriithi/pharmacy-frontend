@@ -43,7 +43,7 @@ const Sales: React.FC = () => {
     e.preventDefault();
 
     try {
-      const apiUrl = `http://127.0.0.1:5000/sales?search=${searchTerm}`; // Adjust the query parameter as needed
+      const apiUrl = `http://127.0.0.1:165.232.46.123/sales?search=${searchTerm}`; // Adjust the query parameter as needed
       const accessToken = localStorage.getItem("accessToken");
       if (!accessToken) {
         throw new Error("Access token not found");

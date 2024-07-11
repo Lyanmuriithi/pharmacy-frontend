@@ -22,7 +22,7 @@ function Register() {
     e.preventDefault();
 
     try {
-      const response = await axios.post('http://localhost:5000/register', formData);
+      const response = await axios.post('http://localhost:165.232.46.123/register', formData);
       const { username } = response.data;
       console.log(`User ${username} has been registered successfully.`);
       navigate('/login');

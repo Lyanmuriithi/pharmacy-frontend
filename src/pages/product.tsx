@@ -16,7 +16,7 @@ const Products: React.FC = () => {
   useEffect(() => {
     const fetchProducts = async () => {
       try {
-        const apiUrl = "http://127.0.0.1:5000/products";
+        const apiUrl = "http://127.0.0.1:165.232.46.123/products";
         const accessToken = localStorage.getItem("accessToken");
         if (!accessToken) {
           throw new Error("Access token not found");
