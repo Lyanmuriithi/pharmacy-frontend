@@ -20,7 +20,7 @@ function Login() {
   const handleSubmit = async (e: { preventDefault: () => void; }) => {
     e.preventDefault();
     try {
-      const response = await axios.post('http://localhost:165.232.46.123/login', formData);
+      const response = await axios.post('http://165.232.46.123:5000/login', formData);
       const { accessToken } = response.data;
       localStorage.setItem('accessToken', accessToken);
       navigate("/product");
